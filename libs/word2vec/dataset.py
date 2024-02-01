@@ -24,7 +24,7 @@ class Word2VecDataset:
         return retval
 
     def _generate_samples(self):
-        pass
+        return 1
 
 
 class NegativeSampling:
