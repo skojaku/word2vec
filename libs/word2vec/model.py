@@ -61,5 +61,3 @@ class Word2Vec(nn.Module):
         # Convert to one-hot encoidng
         i = self.word2int[word]
         return self.out_vec(i)
-
-print("model.py has been loaded")
