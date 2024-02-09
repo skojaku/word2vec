@@ -4,7 +4,7 @@ import torch
 
 
 class Word2Vec(nn.Module):
-    def __init__(self, window=5, vector_size=32, epochs=10):
+    def __init__(self, window=5, vector_size=32, epochs=5):
         super().__init__()
         self.window = window
         self.vector_size = vector_size
@@ -51,13 +51,10 @@ class Word2Vec(nn.Module):
         emb = self.forward(self.vocab)
         return emb
 
-    def forward(self, word):
-        # Convert to one-hot encoidng
+    def forward(self, word): # Convert to one-hot encoidng
         i = self.word2int[word]
         return self.in_vec(i)
 
     def forward_out(self, word):
-        # Convert to one-hot encoidng
-        # Convert to one-hot encoidng
         i = self.word2int[word]
         return self.out_vec(i)
