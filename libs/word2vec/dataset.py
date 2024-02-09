@@ -10,9 +10,11 @@ class Word2VecDataset:
         self.n_samples = 0
 
     def get_vocab(self):
+
         return self.vocab
 
     def __len__(self):
+
         pass
 
     def __getitem__(self, _):
@@ -25,6 +27,9 @@ class Word2VecDataset:
         return retval
 
     def _generate_samples(self):
+
+
+        
         return 1
 
 
